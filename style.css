@@ -30,6 +30,7 @@ html, body{
 }
 
 #navigation{
+    list-style-type: none;
     margin-top: 0px;
     background-color: black;
     width: 100%;
@@ -38,6 +39,8 @@ html, body{
     justify-content: center;
     align-items: center;
     gap: 40px 30px;
+    overflow: hidden;
+    
 }
 #navigation li{
     list-style: none;
@@ -47,9 +50,18 @@ html, body{
 }
 #navigation li a{
     text-decoration: none ;
-    color: white !important;
-
+    color: white; 
+    padding: 22px 16px;
+    
 }
+#navigation li a:hover:not(.basket){
+    color: black;
+    background-color: white;
+    transition: .4s;
+    
+}
+
+
 #navigation li a img{
     width: 70px;
 }
@@ -125,4 +137,43 @@ footer{
 #onmain a{
     text-decoration: none;
     color: white !important;
+}
+#OtherINF{
+    background-color: black;
+    list-style-type: none;
+    list-style-position: inside;
+    width: 15%;
+    border-radius: 20px;
+}
+#OtherINF li{
+    
+    padding: 20px 0px ;
+}
+
+#OtherINF li a
+{
+ color: white ;
+ text-decoration: none;
+} 
+.pagination
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family:"Krona One", sans-serif;
+    font-size: 20px;
+}
+.pagination a
+{
+   text-decoration: none; 
+   color: black;
+   padding: 16px 32px;
+   border-radius: 10px;
+   transition: .4s;
+}
+.pagination a:hover
+{
+ background-color: black;
+ color: white;
+
 }
